@@ -1,10 +1,18 @@
-start = 4001
-end = 4044
+# Ramal inicial
+start = 1000
+
+# Ramal final
+end = 1005
+
+# Adicionar os parametros para cada ramal
 parameters = [
-    'outboundproxy=192.168.1.35',
-    'qualify=3000'
+    'outboundproxy=x.x.x.x',
+    'qualify=3000',
+    'parameter=blablabla'
 ]
 
+# Definição da função
+# verificar o (+), caso não necessitar basta remover no arquivo 
 def geradorRange(start : int, end : int, parameters : list):
     for i in range(start,end+1,1):
         print('[{}](+)'.format(i))
